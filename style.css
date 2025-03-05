@@ -1,6 +1,6 @@
 @font-face {
     font-family: "street";
-    src: url('/font/');
+    src: url('font/street.otf');
 }
 
 :root {
@@ -9,10 +9,19 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("img/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: cover;
+
+}
+
 /*Estilo de la tabla*/
 h1 {
-    font-size: 46px;
+    font-family: "street";
     color: crimson;
+    font-size: 46px;
     text-align: center;
 }
 
@@ -26,10 +35,11 @@ table {
 }
 
 #cabecera {
-    opacity: 0.5;
-    background-image: 'img/';
+    background-image: url("img/fondocabecera.jpg");
+    background-size: 100%;
     font-size: 40px;
     color: whitesmoke;
+    opacity: 0.5;
 }
 
 tr td {
@@ -50,10 +60,6 @@ h2 {
     color: crimson;
     font-size: 28px;
     text-align: center;
-}
-
-fieldset {
-    margin-bottom: 10px;
 }
 
 form {
@@ -79,7 +85,11 @@ textarea {
 
 .sexo {
     display: block;
-    
+    padding-top: 0%;
+}
+
+form fieldset legend h3 {
+    font-family: "street";
 }
 
 .botones {
